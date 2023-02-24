@@ -1,0 +1,36 @@
+
+<html>
+<head>
+	<style>
+		/*Defines a keyframe animation that helps to move the image left and right  */
+		@keyframes move-right {
+			0% { left: 0; }
+			100% { left: 100px; }
+		}
+        @keyframes move-left{
+			0% { left: 0; }
+			100% { left: 100px; }
+		}
+        
+
+		
+		.ani {
+			position: relative;
+			animation-name:move-right;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate-reverse;
+		}
+	</style>
+</head>
+<body>
+<h2><a href="index.html"> Click for home page</a></h2>
+
+	/*Create an HTML div element with a class of ani */
+	<div class="ani">
+		
+        <center><h1>Animation</h1></center>
+        <center><img src="tran.png" height="300" width="700"></center>
+    </div>
+</body>
+</html>
